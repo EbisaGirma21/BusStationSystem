@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Rubik", sans-serif;
+}
+/* Constant Customize offcanvas */
+:root {
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 100px;
+}
+/* navvbar background and shadow effect */
+.nav-col {
+  background-color: #243763;
+  box-shadow: 0 6px 7px -1px rgba(0, 0, 0, 0.35);
+  margin-left: 0;
+}
+/* sidebar bachground and shadow effect */
+.sidebar-nav {
+  background-color: #243763;
+  width: var(--offcanvas-width) !important;
+  transition: all ease-in-out 0.25s;
+}
+/* Search background and hover */
+.btn-search {
+  background-color: #ff6e31;
+}
+.material-icons-outlined {
+  color: #ff6e31;
+}
+.btn-search:hover {
+  background-color: rgb(0, 110, 255);
+}
+
+/* Making the dashboard responsive */
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+    margin-top: var(--topNavbarHeight);
+  }
+  .sidebar-nav {
+    transform: none !important;
+    visibility: visible !important;
+  }
+  .nav-col {
+    margin-left: var(--offcanvas-width);
+    transition: all ease-in-out 0.3s;
+  }
+  .reduced-size {
+    width: var(--topNavbarHeight) !important;
+    text-align: center;
+  }
+  .main-on-menu {
+    margin-left: var(--topNavbarHeight);
+  }
+}
+
+@media (max-width: 992px) {
+  .main-menu {
+    display: none;
+  }
+}
+
+.main-container {
+  margin-top: var(--topNavbarHeight);
+  transition: all ease-in-out 0.3s;
+}
+
+/* sidebar list hover effect */
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+/* sidebar link //station custom */
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+.sidebar-link-item {
+  background-color: #2c406d;
+}
+.sidebar-link-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* Cards  */
+.card {
+  height: 180px;
+}
+.card-title {
+  vertical-align: auto;
+}
+.hidden {
+  display: none;
+  transition: all ease-in-out 0.3s;
+}
