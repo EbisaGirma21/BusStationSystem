@@ -1,6 +1,4 @@
 const btnMenu = document.querySelector(".main-menu");
-const menuText = document.querySelector(".of-txt");
-const menuText1 = document.querySelector(".of-txt1");
 const menuText2 = document.querySelector(".of-txt2");
 const menuText3 = document.querySelector(".of-txt3");
 const menuText4 = document.querySelector(".of-txt4");
@@ -12,8 +10,6 @@ const mainOnMenu = document.querySelector(".main-container");
 const navbarOnMenu = document.querySelector(".navbar");
 const stationAdminPage = document.querySelector(".city-name");
 btnMenu.addEventListener("click", function () {
-  menuText.classList.toggle("hidden");
-  menuText1.classList.toggle("hidden");
   menuText2.classList.toggle("hidden");
   menuText3.classList.toggle("hidden");
   menuText4.classList.toggle("hidden");
@@ -24,5 +20,3 @@ btnMenu.addEventListener("click", function () {
   mainOnMenu.classList.toggle("main-on-menu");
   navbarOnMenu.classList.toggle("main-on-menu");
 });
-
-console.log(document.querySelector('.city-name').textContent)
