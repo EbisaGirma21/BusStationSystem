@@ -28,7 +28,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark nav-col fixed-top py-4">
+    <nav class="navbar navbar-expand-lg nav-col fixed-top py-4">
       <div class="container">
         <!-- offcanvas tigger -->
         <button
@@ -43,12 +43,12 @@
         <!-- offcanvas tigger -->
         <a class="navbar-brand me-auto fs-4 py-2 title-of" href="#"
           ><span
-            class="material-icons-outlined align-middle text-light me-2 main-menu"
+            class="material-icons-outlined align-middle me-2 main-menu fw-bold"
           >
             menu
           </span>
-          <span class="align-middle" style="font-weight: 100"
-            >Ethio Travel</span
+          <span class="align-middle fw-bold" style="font-weight: 600"
+            >Main Station</span
           >
         </a>
         <button
@@ -66,6 +66,7 @@
           ></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- search button -->
           <form class="d-flex ms-auto" role="search">
             <div class="input-group my-3 my-lg-0">
               <input
@@ -80,7 +81,8 @@
               </button>
             </div>
           </form>
-          <span> <i class="bi bi-bell-fill text-white ms-lg-2"></i></span>
+          <!-- search btn end -->
+          <span> <i class="bi bi-bell-fill text-dark ms-lg-2"></i></span>
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item dropdown">
               <a
@@ -90,7 +92,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <i class="bi bi-person-fill"></i>
+                <i class="bi bi-person-fill text-dark"></i>
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li><a class="dropdown-item" href="#">Profile</a></li>
@@ -108,13 +110,13 @@
 
     <!-- Offcanvas -->
     <div
-      class="offcanvas offcanvas-start text-white sidebar-nav"
+      class="offcanvas offcanvas-start text-light sidebar-nav"
       tabindex="-1"
       id="offcanvasExample"
       aria-labelledby="offcanvasExampleLabel"
     >
-      <div class="offcanvas-body p-0">
-        <nav class="navbar-dark">
+      <div class="offcanvas-body text-light p-0">
+        <nav class="navbar-light">
           <ul class="navbar-nav">
             <li>
               <a class="navbar-brand fs-4" href="#">
@@ -125,23 +127,19 @@
               </a>
             </li>
             <li>
-              <div class="text-light small fw-bold text-uppercase px-3">
-                CORE
-              </div>
+              <div class="small fw-bold text-uppercase px-3">CORE</div>
             </li>
             <li>
-              <a href="#" class="nav-link px-3 active">
+              <a href="#" class="nav-link px-3 active-link overflow-x-hidden">
                 <span class="material-icons-outlined me-2"> dashboard </span>
                 <span class="of-txt1 align-top">Dashboard</span>
               </a>
             </li>
-            <li class="my-3">
+            <li class="my-1">
               <hr />
             </li>
             <li>
-              <div class="text-light small fw-bold text-uppercase px-3">
-                Operations
-              </div>
+              <div class="small fw-bold text-uppercase px-3">Operations</div>
             </li>
 
             <li>
@@ -163,7 +161,7 @@
               </a>
               <div class="collapse" id="collapseExample">
                 <div>
-                  <ul class="navbar-nav ps-3 test-light">
+                  <ul class="navbar-nav ps-3">
                     <li>
                       <hr />
                     </li>
@@ -196,39 +194,37 @@
               </div>
             </li>
             <li>
-              <a href="#" class="nav-link px-3 active">
+              <a href="#" class="nav-link px-3">
                 <span class="material-icons-outlined me-2"> commute </span>
                 <span class="of-txt7 align-top">Vehicles</span>
               </a>
             </li>
             <li>
-              <a href="#" class="nav-link px-3 active">
+              <a href="#" class="nav-link px-3">
                 <span class="material-icons-outlined me-2"> emoji_people </span>
                 <span class="of-txt3 align-top">Traffic-Police</span>
               </a>
             </li>
             <li>
-              <a href="#" class="nav-link px-3 active">
+              <a href="#" class="nav-link px-3">
                 <span class="material-icons-outlined me-2"> hail </span>
                 <span class="of-txt4 align-top">Passenger</span>
               </a>
             </li>
-            <li class="my-3">
+            <li class="my-1">
               <hr />
             </li>
             <li>
-              <div class="text-light small fw-bold text-uppercase px-3">
-                Others
-              </div>
+              <div class="small fw-bold text-uppercase px-3">Others</div>
             </li>
             <li>
-              <a href="#" class="nav-link px-3 active">
-                <span class="material-icons-outlined me-2"> settings </span>
+              <a href="#" class="nav-link px-3">
+                <span class="material-icons-outlined me-2 setting"> settings </span>
                 <span class="of-txt5 align-top">Setting</span>
               </a>
             </li>
             <li>
-              <a href="#" class="nav-link px-3 active">
+              <a href="#" class="nav-link px-3">
                 <span class="material-icons-outlined me-2"> report </span>
                 <span class="of-txt6 align-top">Report</span>
               </a>
@@ -247,108 +243,80 @@
         </div>
         <div class="row text-center">
           <!-- Cards -->
-          <div class="col-md-3 mb-3">
-            <div class="card text-bg-primary mb-3">
-              <div class="card-header p-5">
-                <h5 class="card-title">
-                  <span>12</span>
-                </h5>
-              </div>
+          <div class="col-md-3 col-sm-6 m-xs-5 mb-3">
+            <div class="card mb-3">
               <div class="card-body">
                 <h5 class="card-title">Stations</h5>
+                <img src="/assets/station.ico" alt="" />
+                <h5 class="fw-bold">12</h5>
               </div>
             </div>
           </div>
           <!-- Cards -->
-          <div class="col-md-3 mb-3">
-            <div class="card text-bg-success mb-3">
-              <div class="card-header p-5">
-                <h5 class="card-title">
-                  <span>38</span>
-                </h5>
-              </div>
+          <div class="col-md-3 col-sm-6 mb-3">
+            <div class="card mb-3">
               <div class="card-body">
                 <h5 class="card-title">Vehicles</h5>
+                <img src="/assets/vehicles.ico" alt="" />
+                <h5 class="fw-bold">122</h5>
               </div>
             </div>
           </div>
           <!-- Cards -->
-          <div class="col-md-3 mb-3">
-            <div class="card text-bg-warning mb-3">
-              <div class="card-header p-5">
-                <h5 class="card-title">
-                  <span>22</span>
-                </h5>
-              </div>
+          <div class="col-md-3 col-sm-6 mb-3">
+            <div class="card mb-3">
               <div class="card-body">
                 <h5 class="card-title">Traffic-Police</h5>
+                <img src="/assets/traffic.ico" alt="" />
+                <h5 class="fw-bold">48</h5>
               </div>
             </div>
           </div>
           <!-- Cards -->
-          <div class="col-md-3 mb-3">
-            <div class="card text-bg-secondary mb-3">
-              <div class="card-header p-5">
-                <h5 class="card-title">
-                  <span>122</span>
-                </h5>
-              </div>
+          <div class="col-md-3 col-sm-6 mb-3">
+            <div class="card mb-3">
               <div class="card-body">
                 <h5 class="card-title">Passenger</h5>
+                <img src="/assets/passenger.ico" alt="" />
+                <h5 class="fw-bold">1254</h5>
               </div>
             </div>
           </div>
         </div>
         <div class="row text-center">
           <!-- Cards -->
-          <div class="col-md-3 mb-3">
-            <div class="card text-bg-warning mb-3">
-              <div class="card-header p-5">
-                <h5 class="card-title">
-                  <span>12</span>
-                </h5>
-              </div>
+          <div class="col-md-3 col-sm-6 mb-3">
+            <div class="card mb-3">
               <div class="card-body">
                 <h5 class="card-title">Routes</h5>
+                <img src="/assets/routes.ico" alt="" />
+                <h5 class="fw-bold">24</h5>
               </div>
             </div>
           </div>
           <!-- Cards -->
-          <div class="col-md-3 mb-3">
-            <div class="card text-bg-primary mb-3">
-              <div class="card-header p-5">
-                <h5 class="card-title">
-                  <span>38</span>
-                </h5>
-              </div>
+          <div class="col-md-3 col-sm-6 mb-3">
+            <div class="card mb-3">
               <div class="card-body">
                 <h5 class="card-title">Vehicles</h5>
               </div>
             </div>
           </div>
           <!-- Cards -->
-          <div class="col-md-3 mb-3">
-            <div class="card text-bg-success mb-3">
-              <div class="card-header p-5">
-                <h5 class="card-title">
-                  <span>22</span>
-                </h5>
-              </div>
+          <div class="col-md-3 col-sm-6 mb-3">
+            <div class="card mb-3">
               <div class="card-body">
                 <h5 class="card-title">Daily-Travel</h5>
               </div>
             </div>
           </div>
           <!-- Cards -->
-          <div class="col-md-3 mb-3">
-            <div class="card text-bg-danger mb-3">
-              <div class="card-header p-5">
-                <h5 class="card-title">
-                  <span>122</span>
-                </h5>
-              </div>
+          <div class="col-md-3 col-sm-6 mb-3">
+            <div class="card mb-3">
               <div class="card-body">
                 <h5 class="card-title">Alert</h5>
+                <img src="/assets/alert.ico" alt="" />
+                <h5 class="fw-bold">2</h5>
               </div>
             </div>
           </div>
@@ -356,7 +324,7 @@
       </div>
       <!-- Daily Travel tracker chart -->
 
-      <div class="row">
+      <div class="row mx-1">
         <div class="col-md-6 mb-3">
           <div class="card h-100">
             <div class="card-header">
@@ -381,11 +349,91 @@
         </div>
       </div>
       <!-- Daily Travel tracker chart end  -->
+
+      <!-- Modal used to register admin -->
+      <button
+        type="button"
+        class="btn btn-register ms-3"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        data-bs-whatever="@mdo"
+      >
+        Register new Admin
+      </button>
+
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Admin Registration
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <!-- admin Name -->
+                <div class="mb-3">
+                  <label for="admin-name" class="col-form-label"
+                    >Admin Name:</label
+                  >
+                  <input type="text" class="form-control" id="admin-name" />
+                </div>
+                <!-- admin station -->
+                <div class="mb-3">
+                  <label for="admin-station" class="col-form-label"
+                    >Station:</label
+                  >
+                  <input type="text" class="form-control" id="admin-station" />
+                </div>
+
+                <!-- admin email -->
+                <div class="mb-3">
+                  <label for="admin-email" class="col-form-label"
+                    >Admin Email:</label
+                  >
+                  <input type="email" class="form-control" id="admin-email" />
+                </div>
+                <!-- admin phone Number -->
+                <div class="mb-3">
+                  <label for="admin-email" class="col-form-label"
+                    >Admin Phone Number:</label
+                  >
+                  <input type="tel" class="form-control" id="admin-phone" />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button type="button" class="btn btn-save">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal of admin registration end -->
+
       <!-- table start -->
-      <div class="row">
+      <div class="row ms-2">
         <div class="col-md-12 mb-3">
-          <div class="card">
-            <div class="card-header">
+          <div class="border-1">
+            <div class="table-header">
               <span><i class="bi bi-table me-2"></i></span> Admins Data Table
             </div>
             <div class="card-body">
@@ -444,7 +492,7 @@
                       <td>Herrod Chandler</td>
                       <td>Dire Dawa</td>
                       <td>herrodchandler@gmail.com</td>
-                      <td>+2519747488383</td>
+                      <td>+251974748838</td>
                     </tr>
                   </tbody>
                   <tfoot>
@@ -461,9 +509,10 @@
           </div>
         </div>
       </div>
-
+      <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
       <!-- table end -->
     </main>
+
     <!-- Main container of dashboard -->
 
     <!-- Custom Bootstrap-5 JavaScript -->
