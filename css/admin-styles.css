@@ -158,7 +158,7 @@ body {
   transition: all 1.8s;
 }
 /* blockin the line break when screen is small */
-li {
+.lists li {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

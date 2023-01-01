@@ -28,7 +28,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark nav-col fixed-top py-4">
+    <nav class="navbar navbar-expand-lg nav-col fixed-top py-4">
       <div class="container">
         <!-- offcanvas tigger -->
         <button
@@ -43,14 +43,13 @@
         <!-- offcanvas tigger -->
         <a class="navbar-brand me-auto fs-4 py-2 title-of" href="#"
           ><span
-            class="material-icons-outlined align-middle text-light me-2 main-menu"
+            class="material-icons-outlined align-middle me-2 main-menu fw-bold"
           >
             menu
           </span>
-          <span
-            class="align-middle station-city"
-            style="font-weight: 100"
-          ></span>
+          <span class="align-middle fw-bold" style="font-weight: 600"
+            >Branch Station</span
+          >
         </a>
         <button
           class="navbar-toggler"
@@ -67,6 +66,7 @@
           ></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- search button -->
           <form class="d-flex ms-auto" role="search">
             <div class="input-group my-3 my-lg-0">
               <input
@@ -81,7 +81,8 @@
               </button>
             </div>
           </form>
-          <span> <i class="bi bi-bell-fill text-white ms-lg-2"></i></span>
+          <!-- search btn end -->
+          <span> <i class="bi bi-bell-fill text-dark ms-lg-2"></i></span>
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item dropdown">
               <a
@@ -91,13 +92,13 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <i class="bi bi-person-fill"></i>
+                <i class="bi bi-person-fill text-dark"></i>
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li><a class="dropdown-item" href="#">Profile</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#">Logout</a>
+                  <a class="dropdown-item" href="/index.html">Logout</a>
                 </li>
               </ul>
             </li>
@@ -109,14 +110,14 @@
 
     <!-- Offcanvas -->
     <div
-      class="offcanvas offcanvas-start text-white sidebar-nav"
+      class="offcanvas offcanvas-start text-light sidebar-nav"
       tabindex="-1"
       id="offcanvasExample"
       aria-labelledby="offcanvasExampleLabel"
     >
-      <div class="offcanvas-body p-0">
-        <nav class="navbar-dark">
-          <ul class="navbar-nav">
+      <div class="offcanvas-body text-light p-0">
+        <nav class="navbar-light">
+          <ul class="navbar-nav lists">
             <li>
               <a class="navbar-brand fs-4" href="#">
                 <span> <img src="/assets/bus.ico" alt="" /> </span>
@@ -126,60 +127,57 @@
               </a>
             </li>
             <li>
-              <div class="text-light small fw-bold text-uppercase px-3">
-                CORE
-              </div>
+              <div class="small fw-bold text-uppercase px-3">CORE</div>
             </li>
             <li>
-              <a href="#" class="nav-link px-3 active">
+              <a href="#" class="nav-link px-3 active-link overflow-x-hidden">
                 <span class="material-icons-outlined me-2"> dashboard </span>
-                <span class="of-txt2 align-top">Dashboard</span>
+                <span class="of-txt1 align-top">Dashboard</span>
               </a>
             </li>
-            <li class="my-3">
+            <li class="my-1">
               <hr />
             </li>
             <li>
-              <div class="text-light small fw-bold text-uppercase px-3">
-                Operations
-              </div>
+              <div class="small fw-bold text-uppercase px-3">Operations</div>
             </li>
+
             <li>
-              <a href="#" class="nav-link px-3 active">
+              <a href="#" class="nav-link px-3">
                 <span class="material-icons-outlined me-2"> commute </span>
-                <span class="of-txt3 align-top">Schedule</span>
+                <span class="of-txt7 align-top">Schedule</span>
               </a>
             </li>
             <li>
-              <a href="#" class="nav-link px-3 active">
+              <a href="#" class="nav-link px-3">
                 <span class="material-icons-outlined me-2"> emoji_people </span>
-                <span class="of-txt4 align-top">Seats</span>
+                <span class="of-txt3 align-top">Seats</span>
               </a>
             </li>
             <li>
-              <a href="#" class="nav-link px-3 active">
+              <a href="#" class="nav-link px-3">
                 <span class="material-icons-outlined me-2"> hail </span>
-                <span class="of-txt5 align-top">Passenger</span>
+                <span class="of-txt4 align-top">Passenger</span>
               </a>
             </li>
-            <li class="my-3">
+            <li class="my-1">
               <hr />
             </li>
             <li>
-              <div class="text-light small fw-bold text-uppercase px-3">
-                Others
-              </div>
+              <div class="small fw-bold text-uppercase px-3">Others</div>
             </li>
             <li>
-              <a href="#" class="nav-link px-3 active">
-                <span class="material-icons-outlined me-2"> settings </span>
-                <span class="of-txt6 align-top">Setting</span>
+              <a href="#" class="nav-link px-3">
+                <span class="material-icons-outlined me-2 setting">
+                  settings
+                </span>
+                <span class="of-txt5 align-top">Setting</span>
               </a>
             </li>
             <li>
-              <a href="#" class="nav-link px-3 active">
+              <a href="#" class="nav-link px-3">
                 <span class="material-icons-outlined me-2"> report </span>
-                <span class="of-txt7 align-top">Report</span>
+                <span class="of-txt6 align-top">Report</span>
               </a>
             </li>
           </ul>
@@ -196,114 +194,54 @@
         </div>
         <div class="row text-center">
           <!-- Cards -->
-          <div class="col-md-3 mb-3">
-            <div class="card text-bg-primary mb-3">
-              <div class="card-header p-5">
-                <h5 class="card-title">
-                  <span>12</span>
-                </h5>
-              </div>
+          <div class="col-md-6 col-sm-6 mb-3">
+            <div class="card mb-3">
               <div class="card-body">
-                <h5 class="card-title">Stations</h5>
+                <h5 class="card-title">Arrived-Vehicles</h5>
+                <img src="/assets/vehicles.ico" alt="" />
+                <h5 class="fw-bold">122</h5>
               </div>
             </div>
           </div>
           <!-- Cards -->
-          <div class="col-md-3 mb-3">
-            <div class="card text-bg-success mb-3">
-              <div class="card-header p-5">
-                <h5 class="card-title">
-                  <span>38</span>
-                </h5>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Vehicles</h5>
-              </div>
-            </div>
-          </div>
           <!-- Cards -->
-          <div class="col-md-3 mb-3">
-            <div class="card text-bg-warning mb-3">
-              <div class="card-header p-5">
-                <h5 class="card-title">
-                  <span>22</span>
-                </h5>
-              </div>
+          <div class="col-md-6 col-sm-6 mb-3">
+            <div class="card mb-3">
               <div class="card-body">
-                <h5 class="card-title">Traffic-Police</h5>
-              </div>
-            </div>
-          </div>
-          <!-- Cards -->
-          <div class="col-md-3 mb-3">
-            <div class="card text-bg-secondary mb-3">
-              <div class="card-header p-5">
-                <h5 class="card-title">
-                  <span>122</span>
-                </h5>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Passenger</h5>
+                <h5 class="card-title">Booked-Passenger</h5>
+                <img src="/assets/passenger.ico" alt="" />
+                <h5 class="fw-bold">245</h5>
               </div>
             </div>
           </div>
         </div>
         <div class="row text-center">
           <!-- Cards -->
-          <div class="col-md-3 mb-3">
-            <div class="card text-bg-warning mb-3">
-              <div class="card-header p-5">
-                <h5 class="card-title">
-                  <span>12</span>
-                </h5>
-              </div>
+          <div class="col-md-6 col-sm-6 mb-3">
+            <div class="card mb-3">
               <div class="card-body">
                 <h5 class="card-title">Routes</h5>
+                <img src="/assets/routes.ico" alt="" />
+                <h5 class="fw-bold">5</h5>
               </div>
             </div>
           </div>
+
           <!-- Cards -->
-          <div class="col-md-3 mb-3">
-            <div class="card text-bg-primary mb-3">
-              <div class="card-header p-5">
-                <h5 class="card-title">
-                  <span>38</span>
-                </h5>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Vehicles</h5>
-              </div>
-            </div>
-          </div>
-          <!-- Cards -->
-          <div class="col-md-3 mb-3">
-            <div class="card text-bg-success mb-3">
-              <div class="card-header p-5">
-                <h5 class="card-title">
-                  <span>22</span>
-                </h5>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Daily-Travel</h5>
-              </div>
-            </div>
-          </div>
-          <!-- Cards -->
-          <div class="col-md-3 mb-3">
-            <div class="card text-bg-danger mb-3">
-              <div class="card-header p-5">
-                <h5 class="card-title">
-                  <span>122</span>
-                </h5>
-              </div>
+          <div class="col-md-6 col-sm-6 mb-3">
+            <div class="card mb-3">
               <div class="card-body">
                 <h5 class="card-title">Alert</h5>
+                <img src="/assets/alert.ico" alt="" />
+                <h5 class="fw-bold">2</h5>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
     </main>
+
     <!-- Main container of dashboard -->
 
     <!-- Custom Bootstrap-5 JavaScript -->
