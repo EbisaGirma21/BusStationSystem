@@ -130,7 +130,10 @@
               <div class="small fw-bold text-uppercase px-3">CORE</div>
             </li>
             <li>
-              <a href="#" class="nav-link px-3 active-link overflow-x-hidden">
+              <a
+                href="/pages/admin-page.html"
+                class="nav-link px-3 active-link overflow-x-hidden"
+              >
                 <span class="material-icons-outlined me-2"> dashboard </span>
                 <span class="of-txt1 align-top">Dashboard</span>
               </a>
@@ -195,7 +198,7 @@
               </div>
             </li>
             <li>
-              <a href="/pages/vehicles.html" class="nav-link px-3">
+              <a href="#" class="nav-link px-3">
                 <span class="material-icons-outlined me-2"> commute </span>
                 <span class="of-txt7 align-top">Vehicles</span>
               </a>
@@ -242,91 +245,28 @@
     <main class="pt-3 main-container">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12 fw-bold fs-3">Dashboard</div>
+          <div class="col-md-12 fw-bold fs-3">Vehicles</div>
         </div>
         <div class="row text-center">
           <!-- Cards -->
-          <div class="col-md-3 col-sm-6 m-xs-5 mb-3">
+
+          <div class="col-md-6 col-sm-6 mb-3">
             <div class="card mb-3">
               <div class="card-body">
-                <h5 class="card-title">Stations</h5>
-                <img src="/assets/station.ico" alt="" />
-                <h5 class="fw-bold">12</h5>
-              </div>
-            </div>
-          </div>
-          <!-- Cards -->
-          <!-- Card end -->
-          <div class="col-md-3 col-sm-6 mb-3">
-            <div class="card mb-3">
-              <div class="card-body">
-                <h5 class="card-title">Vehicles</h5>
+                <h5 class="card-title">Active-Vehicles</h5>
                 <img src="/assets/vehicles.ico" alt="" />
                 <h5 class="fw-bold">122</h5>
               </div>
             </div>
           </div>
+          <!-- Cards end -->
           <!-- Cards -->
-          <!-- Card end -->
-          <div class="col-md-3 col-sm-6 mb-3">
+          <div class="col-md-6 col-sm-6 m-xs-5 mb-3">
             <div class="card mb-3">
               <div class="card-body">
-                <h5 class="card-title">Traffic-Police</h5>
-                <img src="/assets/traffic.ico" alt="" />
-                <h5 class="fw-bold">48</h5>
-              </div>
-            </div>
-          </div>
-          <!-- Cards -->
-          <!-- Card end -->
-          <div class="col-md-3 col-sm-6 mb-3">
-            <div class="card mb-3">
-              <div class="card-body">
-                <h5 class="card-title">Passenger</h5>
-                <img src="/assets/passenger.ico" alt="" />
-                <h5 class="fw-bold">1254</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row text-center">
-          <!-- Card end -->
-          <!-- Cards -->
-          <div class="col-md-3 col-sm-6 mb-3">
-            <div class="card mb-3">
-              <div class="card-body">
-                <h5 class="card-title">Routes</h5>
-                <img src="/assets/routes.ico" alt="" />
-                <h5 class="fw-bold">24</h5>
-              </div>
-            </div>
-          </div>
-          <!-- Card end -->
-          <!-- Cards -->
-          <div class="col-md-3 col-sm-6 mb-3">
-            <div class="card mb-3">
-              <div class="card-body">
-                <h5 class="card-title">Vehicles</h5>
-              </div>
-            </div>
-          </div>
-          <!-- Card end -->
-          <!-- Cards -->
-          <div class="col-md-3 col-sm-6 mb-3">
-            <div class="card mb-3">
-              <div class="card-body">
-                <h5 class="card-title">Daily-Travel</h5>
-              </div>
-            </div>
-          </div>
-          <!-- Card end -->
-          <!-- Cards -->
-          <div class="col-md-3 col-sm-6 mb-3">
-            <div class="card mb-3">
-              <div class="card-body">
-                <h5 class="card-title">Alert</h5>
-                <img src="/assets/alert.ico" alt="" />
-                <h5 class="fw-bold">2</h5>
+                <h5 class="card-title">Deactivated-Vehicles</h5>
+                <img src="/assets/station.ico" alt="" />
+                <h5 class="fw-bold">12</h5>
               </div>
             </div>
           </div>
@@ -340,7 +280,7 @@
           <div class="card h-100">
             <div class="card-header">
               <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
-              Daily Travel Tracker
+              Daily Vehicles Travel Tracker
             </div>
             <div class="card-body">
               <canvas class="chart" width="400" height="200"></canvas>
@@ -351,7 +291,7 @@
           <div class="card h-100">
             <div class="card-header">
               <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
-              Passenger Booking Flactuation
+              Vehicles Movement Flactuation
             </div>
             <div class="card-body">
               <canvas class="chart" width="400" height="200"></canvas>
@@ -369,7 +309,7 @@
         data-bs-target="#exampleModal"
         data-bs-whatever="@mdo"
       >
-        Register new Admin
+        Register Vehicles
       </button>
 
       <div
@@ -383,7 +323,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h1 class="modal-title fs-5" id="exampleModalLabel">
-                Admin Registration
+                Vehicles Registration
               </h1>
               <button
                 type="button"
@@ -397,7 +337,7 @@
                 <!-- admin Name -->
                 <div class="mb-3">
                   <label for="admin-name" class="col-form-label"
-                    >Admin Name:</label
+                    >Vehicle Model:</label
                   >
                   <input type="text" class="form-control" id="admin-name" />
                 </div>
@@ -451,25 +391,27 @@
               <div class="table-responsive">
                 <table
                   id="example"
-                  class="table table-striped data-table"
+                  class="table table-striped data-table vehicles-table"
                   style="width: 100%"
                 >
                   <thead>
                     <tr>
-                      <th>Name</th>
-                      <th>Station</th>
-                      <th>Email</th>
+                      <th>Driver Name</th>
+                      <th>Driver Email</th>
                       <th>Phone Number</th>
+                      <th>Vehicle Model</th>
+                      <th>Licence plate</th>
                       <th>Status</th>
                       <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Tiger Nixon</td>
-                      <td>Addis Ababa</td>
-                      <td>tigernixon@gmail.com</td>
+                      <td>Kalab Mekonen</td>
+                      <td>kalabmekonen@gmail.com</td>
                       <td>+251945744838</td>
+                      <td>5L-minibus</td>
+                      <td>3-AA-0123456</td>
                       <td>
                         <span class="status">Active</span>
                       </td>
@@ -489,10 +431,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Garrett Winters</td>
-                      <td>Wolkite</td>
-                      <td>gerrettwinters@gmail.com</td>
-                      <td>+251947483837</td>
+                      <td>Kalab Mekonen</td>
+                      <td>kalabmekonen@gmail.com</td>
+                      <td>+251945744838</td>
+                      <td>5L-minibus</td>
+                      <td>3-AA-0123456</td>
                       <td>
                         <span class="status">Active</span>
                       </td>
@@ -512,10 +455,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Ashton Cox</td>
-                      <td>Dessie</td>
-                      <td>ashtoncox@gmail.com</td>
-                      <td>+251947837433</td>
+                      <td>Kalab Mekonen</td>
+                      <td>kalabmekonen@gmail.com</td>
+                      <td>+251945744838</td>
+                      <td>5L-minibus</td>
+                      <td>3-AA-0123456</td>
                       <td>
                         <span class="status">Active</span>
                       </td>
@@ -535,10 +479,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Cedric Kelly</td>
-                      <td>Bahirdar</td>
-                      <td>cerdickelly@gmail.com</td>
-                      <td>+251937446478</td>
+                      <td>Kalab Mekonen</td>
+                      <td>kalabmekonen@gmail.com</td>
+                      <td>+251945744838</td>
+                      <td>5L-minibus</td>
+                      <td>3-AA-0123456</td>
                       <td>
                         <span class="status">Active</span>
                       </td>
@@ -558,10 +503,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Airi Satou</td>
-                      <td>Weliso</td>
-                      <td>airisatou@gmail.com</td>
-                      <td>+251947383839</td>
+                      <td>Kalab Mekonen</td>
+                      <td>kalabmekonen@gmail.com</td>
+                      <td>+251945744838</td>
+                      <td>5L-minibus</td>
+                      <td>3-AA-0123456</td>
                       <td>
                         <span class="status">Active</span>
                       </td>
@@ -581,10 +527,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Brielle Williamson</td>
-                      <td>Adama</td>
-                      <td>briellewilliamson@gmail.com</td>
-                      <td>+251947584584</td>
+                      <td>Naol Kenenisa</td>
+                      <td>naolkenenisa@gmail.com</td>
+                      <td>+251998656576</td>
+                      <td>H-roof-Hiace</td>
+                      <td>3-AM-0158889</td>
                       <td>
                         <span class="status">Active</span>
                       </td>
@@ -604,10 +551,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Herrod Chandler</td>
-                      <td>Dire Dawa</td>
-                      <td>herrodchandler@gmail.com</td>
-                      <td>+251974748838</td>
+                      <td>Teshome Ashenafi</td>
+                      <td>teshomeahenafi@gmail.com</td>
+                      <td>+251975397493</td>
+                      <td>S-roof-Hiace</td>
+                      <td>3-AA-0123456</td>
                       <td>
                         <span class="status">Active</span>
                       </td>
@@ -629,10 +577,11 @@
                   </tbody>
                   <tfoot>
                     <tr>
-                      <th>Name</th>
-                      <th>Station</th>
-                      <th>Email</th>
+                      <th>Driver Name</th>
+                      <th>Driver Email</th>
                       <th>Phone Number</th>
+                      <th>Vehicle Model</th>
+                      <th>Licence plate</th>
                       <th>Status</th>
                       <th>Action</th>
                     </tr>
