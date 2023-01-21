@@ -188,6 +188,24 @@ body {
   border-radius: 5px;
   border: none;
 }
-tr{
- vertical-align: middle;
+tr {
+  vertical-align: middle;
+}
+/* hide the main-conatiner of some part */
+.hidden {
+  display: none;
+}
+/* the offcanvas bar buttons */
+.nav-link-button {
+  border: none;
+  background-color: #405189;
+  color: white;
+  padding-right: 100%;
+}
+.nav-link-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.text-in-button {
+  vertical-align: center;
+  margin: 10px 0 0 10px;
 }
