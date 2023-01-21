@@ -1,2 +1,2 @@
 # IP-Project-Bus-Station-Management-System
-This project is Internet Programming course project; with HTML,CSS,JavaScript,Nodejs the Bootstrap-5 and Express as a frame work
+This project is Internet Programming course project; with HTML,CSS,JavaScript,PHP and Bootstrap-5 s as a front-end frame work
